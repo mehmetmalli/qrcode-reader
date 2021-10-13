@@ -39,8 +39,7 @@ navigator.mediaDevices.getUserMedia(userMediaConstraints).then(function(stream) 
 	if ( videoEl.srcObject === null ) { 
 		videoEl.srcObject = stream;
 	} else {
-		console.asset( !window.URL, 'window.URL isnt define ')
-		var objUrl = window.URL.createObjectURL(stream);
+		console.assert( !window.URL, "window.URL isn't defined");
 	}
 	videoEl.play();
 }).catch(function(error) {
