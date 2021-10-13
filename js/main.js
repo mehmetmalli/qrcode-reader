@@ -90,4 +90,4 @@ function scanVideoNow(){
 scanVideoNow()
 setInterval(function() {
 	scanVideoNow()
-}, 100);
+}, 10);
